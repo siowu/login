@@ -1,0 +1,33 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes, width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>登录</title>
+<script language=javascript>
+function toopen(){
+    if(document.getElementById("password").value=="syksb"){
+           document.write("<div style='text-align:center; font-size:36px;'><a href='https://siowu.github.io/c' style='a:link{text-decoration:none;color:black;}'>点击进入</a></div>");
+           return true;
+        }else{
+        alert("密码错误！请重新输入:")
+        return false;
+        }
+    }
+</script>
+<link rel="icon" href="1.ico" type="image/x-icon">
+</head>
+<div style="text-align:center;">
+<form method="post" action="index.html" name="myform" >
+	<p>
+		<label for="username">姓名：</label>
+		<input type="text" id="name" name="name" class="loginInput"/>
+	</p>
+	<p>
+		<label for="password">密码：</label>
+		<input type="password" id="password" name="password" class="loginInput"/>
+	</p>      
+	<input type="submit" value="登陆" class="loginBtn" onClick="return toopen();">            
+</form>
+</div>
+</body>
+</html>
